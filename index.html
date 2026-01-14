@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEP | دورة عايد المكثفة 2026 — أونلاين</title>
+  <meta name="description" content="الموقع الرسمي للتسجيل في دورة STEP المكثفة 2026 — اختبار خطة مذاكرة ذكية، دفع رسمي، ونموذج تسجيل متعدد الخطوات.">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="STEP | دورة عايد المكثفة 2026 — أونلاين">
+  <meta property="og:description" content="دورة مركزة بخطة مذاكرة ذكية واختبار تحديد مستوى قبل التسجيل.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/pwa-512.svg">
+  <meta property="og:url" content="./">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "STEP | دورة عايد المكثفة 2026 — أونلاين",
+    "description": "دورة مركزة لرفع درجة STEP بخطة واضحة واختبار تحديد مستوى.",
+    "provider": {
+      "@type": "Organization",
+      "name": "أكاديمية عايد",
+      "sameAs": "https://t.me/Ayed_Academy_2026"
+    }
+  }
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/img/pwa-192.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0B1220',
+            accent: '#F6C343',
+            success: '#22C55E',
+            danger: '#EF4444',
+            muted: '#9CA3AF',
+            surface: '#0F172A'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-primary text-white font-[Cairo]">
+  <div class="news-ticker" id="newsTicker">
+    <span class="news-label">تنبيه رسمي</span>
+    <div class="news-content" id="newsContent"></div>
+  </div>
+
+  <header class="fixed top-0 right-0 left-0 z-40 bg-primary/90 backdrop-blur border-b border-white/5">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center" aria-label="شعار أكاديمية عايد">
+            <i class="fa-solid fa-shield-halved text-accent"></i>
+          </div>
+          <div>
+            <p class="text-sm text-muted">STEP | دورة عايد المكثفة 2026</p>
+            <p class="text-xs text-accent">الموقع الرسمي</p>
+          </div>
+        </div>
+        <nav class="hidden lg:flex items-center gap-5 text-sm">
+          <a href="#hero" class="hover:text-accent">الرئيسية</a>
+          <a href="#why" class="hover:text-accent">لماذا الدورة؟</a>
+          <a href="#quiz" class="hover:text-accent">اختبار الخطة</a>
+          <a href="#modules" class="hover:text-accent">محتوى الدورة</a>
+          <a href="#pricing" class="hover:text-accent">الرسوم</a>
+          <a href="#register" class="hover:text-accent">التسجيل</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="installBtn" class="hidden lg:inline-flex items-center gap-2 border border-accent/60 text-accent px-3 py-2 rounded-full text-xs hover:bg-accent hover:text-primary transition" aria-label="تثبيت الموقع">
+            <i class="fa-solid fa-download"></i>
+            تثبيت الموقع
+          </button>
+          <a href="#register" class="inline-flex items-center gap-2 bg-accent text-primary px-4 py-2 rounded-full text-sm font-semibold shadow-soft" aria-label="سجّل الآن">
+            سجّل الآن
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28 watermark-bg">
+    <section id="hero" class="container mx-auto px-4 py-10 lg:py-16 alt-bg">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+          <p class="inline-flex items-center gap-2 text-xs text-accent border border-accent/40 px-3 py-1 rounded-full">
+            <i class="fa-solid fa-circle-check"></i>
+            الموقع الرسمي للتسجيل
+          </p>
+          <h1 class="text-3xl lg:text-4xl font-extrabold leading-relaxed">STEP | دورة عايد المكثفة 2026 — أونلاين (الشرح والتدريب)</h1>
+          <p class="text-muted leading-relaxed">دورة عملية ومركّزة للي يبي يرفع درجته بسرعة <strong>بدون تشتّت مصادر</strong>.<br>نرتّب لك الطريق: <strong>شروحات + ملفات + نماذج + كويزات + خطة مذاكرة واضحة</strong> — وأنت عليك الالتزام والباقي علينا ✅</p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div class="badge">⏳ وصول للمحتوى: 90 يوم</div>
+            <div class="badge">🔄 تحديثات مستمرة للتجميعات</div>
+            <div class="badge">🧩 خطة مذاكرة ذكية حسب وقتك</div>
+            <div class="badge">🛡️ حساب رسمي موثق + بيانات تحويل رسمية</div>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="#quiz" class="bg-accent text-primary px-4 py-2 rounded-full font-semibold" aria-label="ابدأ اختبار الخطة الذكية">ابدأ اختبار الخطة الذكية</a>
+            <a href="#register" class="border border-accent/60 text-accent px-4 py-2 rounded-full" aria-label="سجّل الآن">سجّل الآن</a>
+            <a href="#payment" class="border border-white/20 px-4 py-2 rounded-full" aria-label="طريقة الدفع">طريقة الدفع</a>
+            <a href="https://t.me/Ayed_Academy_2026" class="border border-white/20 px-4 py-2 rounded-full" aria-label="تواصل مع الحساب الرسمي">تواصل مع الحساب الرسمي</a>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="card p-6">
+            <h2 class="text-xl font-bold mb-2">الخصم الحالي</h2>
+            <p class="text-accent font-bold text-2xl">299 ريال</p>
+            <p class="text-muted">السعر الرسمي بعد انتهاء العرض: 449 ريال</p>
+            <div class="mt-4 flex flex-wrap gap-4">
+              <div class="countdown-card">
+                <p class="text-xs text-muted">ينتهي العرض خلال</p>
+                <div id="countdown" class="text-lg font-bold text-accent">--:--:--</div>
+              </div>
+              <div class="seats-card">
+                <p class="text-xs text-muted">المقاعد المتبقية</p>
+                <div class="text-xl font-bold" id="seatsRemaining">--</div>
+                <div class="progress">
+                  <div class="progress-bar" id="seatsProgress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-bold mb-3">روابط أكاديمية عايد الرسمية</h3>
+            <ul class="space-y-2 text-sm text-muted">
+              <li><i class="fa-brands fa-telegram text-accent"></i> بوت المحتوى المجاني: <a class="text-accent" href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">https://t.me/ayedacadmeybot</a></li>
+              <li><i class="fa-brands fa-telegram text-accent"></i> قروب التنبيهات الرسمي: <a class="text-accent" href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">https://t.me/Academy_Ayed_2026</a></li>
+              <li><i class="fa-solid fa-user-check text-accent"></i> الاستفسار والاشتراك: @Ayed_Academy_2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="inline-news mt-8">
+        <div class="inline-news-label">آخر التحديثات</div>
+        <div id="inlineNews"></div>
+      </div>
+    </section>
+
+    <section id="why" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>إذا كثرت المصادر… الدرجة تضيع.</h2>
+        <p>كثير طلاب يضيعون لأن كل واحد يعطيك “مصدر” مختلف: قنوات، ملفات، ملازم، تجميعات… وفي النهاية الوقت يطير. هنا نختصرها لك: <strong>محتوى مرتب + خطوات واضحة + خطة يومية</strong> — تذاكر بتركيز وتدخل الاختبار وأنت فاهم وش تسوي.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="card p-5 feature-card"><i class="fa-solid fa-layer-group"></i><h3>محتوى مرتب</h3><p class="text-muted">مسار واضح بدون تشتيت.</p></div>
+        <div class="card p-5 feature-card"><i class="fa-solid fa-list-check"></i><h3>خطوات يومية</h3><p class="text-muted">تذاكر على جدول عملي.</p></div>
+        <div class="card p-5 feature-card"><i class="fa-solid fa-bullseye"></i><h3>تركيز على النماذج</h3><p class="text-muted">الأحدث أولاً لرفع الدرجة.</p></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="container mx-auto px-4 py-12 alt-bg">
+      <div class="section-title">
+        <h2>اختبار سريع (60 ثانية) ونطلع لك خطة مذاكرة تناسبك ✅</h2>
+        <p>جاوب كم سؤال بسيط… وبنعطيك خطة مذاكرة مناسبة لوقتك + وش تركز عليه داخل الدورة. الاختبار إلزامي قبل التسجيل لضمان خطة مناسبة.</p>
+      </div>
+      <div class="card p-6 mb-6">
+        <h3 class="font-bold mb-2">ليش اختبار تحديد المستوى مهم؟</h3>
+        <ul class="text-sm text-muted list-disc list-inside space-y-1">
+          <li>يحدد نقاط ضعفك بدقة لكل قسم.</li>
+          <li>يعطيك خطة مذاكرة مناسبة لموعد اختبارك.</li>
+          <li>يوضح لك الأسئلة اللي أخطأت فيها مع تفسير مبسّط.</li>
+        </ul>
+        <button id="startQuiz" class="mt-4 bg-accent text-primary px-4 py-2 rounded-full font-semibold" aria-label="ابدأ اختبار تحديد المستوى">ابدأ اختبار تحديد المستوى</button>
+      </div>
+      <div id="quizWizard" class="hidden">
+        <div class="quiz-stepper" id="quizStepper"></div>
+        <form id="quizForm" class="space-y-6"></form>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <button type="button" id="prevQuiz" class="border border-white/20 px-4 py-2 rounded-full">السابق</button>
+          <button type="button" id="nextQuiz" class="bg-accent text-primary px-4 py-2 rounded-full">التالي</button>
+          <button type="submit" id="submitQuiz" class="hidden bg-accent text-primary px-4 py-2 rounded-full">استعرض الخطة والتحليل</button>
+        </div>
+      </div>
+      <div id="quizResult" class="hidden mt-8"></div>
+    </section>
+
+    <section id="modules" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>وش داخل الدورة؟ (الشرح + التدريب + الملفات)</h2>
+        <p>محتوى مرتب — تدخل تلقى كل قسم واضح، ومعه ملفات + نماذج محلولة وغير محلولة + مراجعات.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">المحاضرات التمهيدية</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>ملف المحاضرات التمهيدية قرامر</li>
+            <li>ريدينق تمهيدي (غير محلول)</li>
+            <li>ريدينق تمهيدي (محلول)</li>
+            <li>ملف المحاضرات التمهيدية ليسننق</li>
+            <li>ملف ليسننق تمهيدي (محلول)</li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">القرامر</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>ملف شرح القرامر (غير محلول)</li>
+            <li>ملف شرح القرامر (محلول)</li>
+            <li>أسئلة مراجعة القرامر (غير محلولة)</li>
+            <li>أسئلة مراجعة القرامر (محلولة)</li>
+            <li>مراجعة أول 8 قواعد (محلولة)</li>
+            <li>نماذج القرامر (محلولة/غير محلولة)</li>
+            <li>نموذج 49 (محلول/غير محلول)</li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">الاستثناءات</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>استثناءات القواعد (غير محلول)</li>
+            <li>استثناءات القواعد (محلول)</li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">الريدينق</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>استراتيجيات الريدينق (غير محلول)</li>
+            <li>استراتيجيات الريدينق (محلول)</li>
+            <li>نماذج Reading 2025 (محلولة/غير محلولة)</li>
+            <li>القطع الأكثر تكرارًا (محلولة/غير محلول)</li>
+            <li>كبسولة الإنقاذ</li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">الليسنينق</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>استراتيجيات الليسنينق</li>
+            <li>نماذج الليسنينق (محلولة/غير محلولة)</li>
+            <li>نماذج بدون مقاطع</li>
+          </ul>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">مكتبة إضافية قوية</h3>
+          <ul class="text-sm text-muted list-disc list-inside space-y-1">
+            <li>فوكابلري + تصريفات الأفعال</li>
+            <li>التكنيكات التي يجب معرفتها</li>
+            <li>خرائط مفاهيم قرامر</li>
+            <li>ملخص قواعد ستيب + جداول مذاكرة</li>
+            <li>تحديثات مستمرة حتى نزول النماذج الجديدة</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="study" class="container mx-auto px-4 py-12 alt-bg">
+      <div class="section-title">
+        <h2>ترتيب المذاكرة المقترح (بدون لف ودوران)</h2>
+        <p>الدورة تسوي لك نظام… وأنت عليك الالتزام. الله يوفقك ويشرح صدرك 🤍</p>
+      </div>
+      <ol class="card p-6 space-y-3 text-sm text-muted list-decimal list-inside">
+        <li><strong>المحاضرات التمهيدية (اختياري):</strong> إذا مستواك ضعيف أو تبي تأسيس سريع</li>
+        <li><strong>القرامر:</strong> تأسيس القواعد → حل التجميعات → مراجعة + كويزات</li>
+        <li><strong>الريدينق:</strong> استراتيجيات الحل → التجميعات → مراجعة + كويزات</li>
+        <li><strong>الليسنينق:</strong> استراتيجيات الاستماع → التجميعات + التدريب اليومي → كويزات</li>
+        <li><strong>قبل الاختبار:</strong> ركّز على النماذج الأحدث + راجع الأخطاء المتكررة</li>
+      </ol>
+    </section>
+
+    <section id="pricing" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>رسوم دورة STEP المكثفة 2026</h2>
+        <p>ينتهي العرض بتاريخ: 29/01/2026 — بعده نكتفي بعدد محدد من المشتركين بالسعر الرسمي.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="card p-6 lg:col-span-2">
+          <p class="text-accent font-bold text-lg">السعر الحالي (عرض): 299 ريال</p>
+          <p class="text-muted">السعر الرسمي بعد انتهاء العرض: 449 ريال</p>
+          <div class="mt-4 flex flex-wrap gap-4">
+            <div class="countdown-card">
+              <p class="text-xs text-muted">الوقت المتبقي</p>
+              <div id="countdownPricing" class="text-lg font-bold text-accent">--:--:--</div>
+            </div>
+            <div class="seats-card">
+              <p class="text-xs text-muted">المقاعد المتبقية</p>
+              <div class="text-xl font-bold" id="seatsRemainingPricing">--</div>
+              <div class="progress">
+                <div class="progress-bar" id="seatsProgressPricing"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold mb-2">تنبيه مهم</h3>
+          <p class="text-sm text-muted">الخصم له تاريخ نهاية واضح — بعده يرجع السعر الرسمي.</p>
+          <a href="#payment" class="mt-4 inline-flex justify-center bg-accent text-primary px-4 py-2 rounded-full font-semibold">طريقة الدفع</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="container mx-auto px-4 py-12 alt-bg">
+      <div class="section-title">
+        <h2>بيانات التحويل البنكي الرسمية (أكاديمية عايد)</h2>
+        <p>🔒 هذه البيانات رسمية — أي تحويل خارجها غير معتمد.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <div class="copy-line"><span>🟢 البنك: بنك الإنماء</span><button data-copy="بنك الإنماء" class="copy-btn" aria-label="نسخ البنك">Copy</button></div>
+          <div class="copy-line"><span>🏦 رقم الحساب: 68206067557000</span><button data-copy="68206067557000" class="copy-btn" aria-label="نسخ رقم الحساب">Copy</button></div>
+          <div class="copy-line"><span>🏦 الآيبان: SA4905000068206067557000</span><button data-copy="SA4905000068206067557000" class="copy-btn" aria-label="نسخ الآيبان">Copy</button></div>
+          <div class="copy-line"><span>👤 اسم المستفيد: مؤسسة كريتيفا جلوبال لتقنية المعلومات</span><button data-copy="مؤسسة كريتيفا جلوبال لتقنية المعلومات" class="copy-btn" aria-label="نسخ اسم المستفيد">Copy</button></div>
+          <div class="copy-line"><span>📝 الغرض من التحويل: مشتريات دورة STEP المكثفة – منصة عايد الرسمية</span><button data-copy="مشتريات دورة STEP المكثفة – منصة عايد الرسمية" class="copy-btn" aria-label="نسخ الغرض">Copy</button></div>
+          <div class="copy-line"><span>📝 الغرض المختصر: مشتريات دورة STEP المكثفة</span><button data-copy="مشتريات دورة STEP المكثفة" class="copy-btn" aria-label="نسخ الغرض المختصر">Copy</button></div>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-bold mb-3">طريقة الاشتراك خطوة بخطوة</h3>
+          <ol class="list-decimal list-inside text-sm text-muted space-y-2">
+            <li>حول الرسوم على بيانات التحويل الرسمية بالأعلى</li>
+            <li>جهّز الإيصال (صورة أو PDF)</li>
+            <li>عبّ نموذج التسجيل وارفق الإيصال (إلزامي)</li>
+            <li>اضغط “إرسال الطلب” — بيفتح لك تلجرام برسالة جاهزة</li>
+            <li><strong>ألصق الرسالة وأرفق الإيصال مرة ثانية في تلجرام</strong> للتأكيد النهائي</li>
+            <li>انتظر الرد — يتم التأكيد بأقرب وقت بعد وصول التحويل</li>
+          </ol>
+          <p class="text-xs text-muted mt-3">فضلاً لا تكرر الرسائل… كثرة الرسائل ممكن تأخر الرد عليك.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>نموذج التسجيل وتأكيد الدفع</h2>
+        <p>نموذج متعدد الخطوات مع تحقق إلزامي قبل الإرسال.</p>
+      </div>
+      <div class="card p-6">
+        <div class="form-stepper" id="formStepper"></div>
+        <form id="registrationForm" class="space-y-8"></form>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <button type="button" id="prevForm" class="border border-white/20 px-4 py-2 rounded-full">السابق</button>
+          <button type="button" id="nextForm" class="bg-accent text-primary px-4 py-2 rounded-full">التالي</button>
+          <button type="submit" id="submitForm" class="hidden bg-accent text-primary px-4 py-2 rounded-full">إرسال طلب الاشتراك للحساب الرسمي ✅</button>
+        </div>
+      </div>
+      <div id="successScreen" class="hidden mt-8 card p-6 space-y-4">
+        <h3 class="text-xl font-bold text-accent">تم تجهيز رسالتك ✅</h3>
+        <p class="text-sm text-muted">الآن الصق الرسالة في تلجرام وأرفق الإيصال مرة ثانية (صورة أو PDF) للتأكيد النهائي.</p>
+        <div id="successSummary" class="text-sm text-muted"></div>
+        <div class="card p-4 bg-primary border border-white/10 text-sm whitespace-pre-line" id="telegramMessage"></div>
+        <a id="telegramLink" href="#" target="_blank" rel="noopener" class="bg-accent text-primary px-4 py-2 rounded-full font-semibold inline-flex items-center gap-2" aria-label="افتح تلجرام">
+          <i class="fa-brands fa-telegram"></i>
+          افتح تلجرام للحساب الرسمي
+        </a>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container mx-auto px-4 py-12 alt-bg">
+      <div class="section-title">
+        <h2>آراء ونتائج طلابنا 🤍</h2>
+        <p>هذه مقتطفات من تجارب فعلية (تم إخفاء البيانات الخاصة حفاظًا على الخصوصية).</p>
+      </div>
+      <div id="testimonialsGrid" class="grid lg:grid-cols-4 gap-6"></div>
+      <div class="mt-8">
+        <h3 class="font-bold mb-3">معرض آراء الطلاب (بدون صور شخصية)</h3>
+        <div id="galleryGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+      </div>
+    </section>
+
+    <section id="faq" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>الأسئلة الشائعة</h2>
+        <p>أجوبة واضحة على أكثر الاستفسارات المتكررة.</p>
+      </div>
+      <div id="faqList" class="space-y-3"></div>
+    </section>
+
+    <section id="share" class="container mx-auto px-4 py-12 alt-bg">
+      <div class="section-title">
+        <h2>نصوص إعلان جاهزة للمشاركة</h2>
+        <p>انسخ الرسالة المناسبة وشاركها.</p>
+      </div>
+      <div class="card p-6 space-y-4">
+        <button id="shareBtn" class="bg-accent text-primary px-4 py-2 rounded-full font-semibold inline-flex items-center gap-2" aria-label="مشاركة الإعلان">
+          <i class="fa-solid fa-share-nodes"></i>
+          مشاركة الإعلان
+        </button>
+        <div id="shareTexts" class="grid gap-3 text-sm text-muted"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="bg-surface border-t border-white/10 py-10">
+    <div class="container mx-auto px-4 space-y-6">
+      <div class="flex flex-wrap gap-4">
+        <button data-modal="privacy" class="text-accent" aria-label="سياسة الخصوصية">سياسة الخصوصية</button>
+        <button data-modal="refund" class="text-accent" aria-label="سياسة الاسترجاع">سياسة الاسترجاع</button>
+        <button data-modal="terms" class="text-accent" aria-label="الشروط والتعهد">الشروط والتعهد</button>
+        <button data-modal="fraud" class="text-accent" aria-label="تنبيه الاحتيال">تنبيه الاحتيال</button>
+      </div>
+      <p class="text-xs text-muted">الحساب الرسمي فقط عبر @Ayed_Academy_2026</p>
+    </div>
+  </footer>
+
+  <div id="policyModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="galleryModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeGallery" class="modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div id="galleryContent"></div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+  <div id="stickyWarning" class="sticky-warning">التسجيل عبر الحساب الرسمي فقط: @Ayed_Academy_2026</div>
+
+  <div class="assistant">
+    <button id="assistantToggle" class="assistant-toggle" aria-label="مساعد التسجيل"><i class="fa-solid fa-headset"></i></button>
+    <div id="assistantPanel" class="assistant-panel hidden">
+      <div class="assistant-header">هلا 👋 أنا مساعد التسجيل السريع</div>
+      <div class="assistant-body" id="assistantBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
