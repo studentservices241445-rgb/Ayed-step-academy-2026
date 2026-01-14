@@ -56,6 +56,53 @@ body {
   color: var(--muted);
 }
 
+.install-banner {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 12px 14px;
+  background: #111;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.install-banner .banner-inner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.install-banner strong {
+  color: var(--accent);
+}
+
+.install-banner .banner-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.install-banner .banner-actions button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.install-banner .install-now {
+  background: var(--accent);
+  color: #111;
+  border: none;
+}
+
+.install-banner .install-later {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
 .news-ticker {
   position: fixed;
   top: 0;
@@ -211,7 +258,7 @@ header {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 86px;
   right: 20px;
   width: 44px;
   height: 44px;
@@ -236,6 +283,38 @@ header {
   border-radius: 999px;
   font-size: 0.75rem;
   z-index: 45;
+}
+
+.mobile-cta {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 70;
+}
+
+.mobile-cta a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.mobile-cta .cta-quiz {
+  background: var(--accent);
+  color: #0B1220;
+}
+
+.mobile-cta .cta-register {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 .modal {
@@ -349,7 +428,7 @@ header {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='220'><text x='10' y='120' fill='white' fill-opacity='0.05' font-size='26' font-family='Cairo, sans-serif'>أكاديمية عايد • STEP المكثفة 2026</text></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='220'><text x='10' y='120' fill='white' fill-opacity='0.05' font-size='26' font-family='Cairo, sans-serif'>Ayed Academy 2026</text></svg>");
   background-repeat: repeat;
   background-size: 420px 220px;
   transform: rotate(-12deg);
@@ -368,5 +447,14 @@ main > * {
   }
   .sticky-warning {
     top: 88px;
+  }
+  .mobile-cta {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-cta {
+    display: none;
   }
 }

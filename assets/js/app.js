@@ -71,7 +71,7 @@ function createToast(message) {
 
 function cycleToasts() {
   createToast(notifications[Math.floor(Math.random() * notifications.length)]);
-  const interval = 10000 + Math.floor(Math.random() * 8000);
+  const interval = 12000 + Math.floor(Math.random() * 8000);
   setTimeout(cycleToasts, interval);
 }
 
@@ -397,9 +397,12 @@ function setupTestimonials() {
         <div class="w-10 h-10 rounded-full bg-accent/10 border border-accent/40 flex items-center justify-center text-accent">
           <i class="fa-solid fa-user-check"></i>
         </div>
-        <div class="text-accent flex items-center gap-2">
-          <i class="fa-solid fa-star"></i>
-          <span>${item.name}</span>
+        <div>
+          <div class="text-accent flex items-center gap-2">
+            <span>${item.rating}</span>
+            <span>${item.name}</span>
+          </div>
+          <p class="text-xs text-muted">${item.result}</p>
         </div>
       </div>
       <p class="text-sm text-muted">${item.text}</p>
@@ -612,7 +615,7 @@ const formSteps = [
     render: () => `
       <div class="space-y-3 text-sm">
         <label class="flex items-start gap-2"><input type="checkbox" name="pledge1" required> أتعهد بعدم مشاركة أو تسريب محتوى الدورة نهائيًا، وأفهم أن إدارة الدورة يحق لها إلغاء الاشتراك عند مخالفة ذلك.</label>
-        <label class="flex items-start gap-2"><input type="checkbox" name="pledge2" required> أؤكد أن التحويل تم على البيانات الرسمية المذكورة بالموقع.</label>
+        <label class="flex items-start gap-2"><input type="checkbox" name="pledge2" required> أؤكد أن التحويل تم على البيانات الرسمية المذكورة في الموقع.</label>
         <label class="flex items-start gap-2"><input type="checkbox" name="pledge3" required> أفهم أن التفعيل النهائي يتم بعد إرسال الإيصال مرة ثانية في تلجرام للحساب الرسمي.</label>
       </div>
     `
@@ -834,14 +837,16 @@ function setupShare() {
   });
 }
 
-function setupInstallPrompt() {
+function setupInstallBanner() {
+  const banner = document.getElementById('installBanner');
   const installBtn = document.getElementById('installBtn');
+  const dismissBtn = document.getElementById('dismissInstall');
   let deferredPrompt = null;
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredPrompt = event;
-    installBtn.classList.remove('hidden');
+    banner.style.display = 'block';
   });
 
   installBtn.addEventListener('click', async () => {
@@ -849,7 +854,11 @@ function setupInstallPrompt() {
     deferredPrompt.prompt();
     await deferredPrompt.userChoice;
     deferredPrompt = null;
-    installBtn.classList.add('hidden');
+    banner.style.display = 'none';
+  });
+
+  dismissBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
   });
 }
 
@@ -874,6 +883,6 @@ setupModal();
 setupAssistant();
 setupBackToTop();
 setupShare();
-setupInstallPrompt();
+setupInstallBanner();
 registerServiceWorker();
 setInterval(updateCountdown, 1000);

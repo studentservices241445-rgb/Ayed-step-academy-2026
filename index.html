@@ -55,6 +55,19 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-primary text-white font-[Cairo]">
+  <div id="installBanner" class="install-banner">
+    <div class="banner-inner">
+      <div class="flex items-center gap-3">
+        <strong>ثبّت موقع أكاديمية عايد كتطبيق 📲</strong>
+        <span class="text-sm text-white/90">عشان وصول أسرع + إشعارات التحديثات</span>
+      </div>
+      <div class="banner-actions">
+        <button id="installBtn" class="install-now" aria-label="ثبّت الآن">ثبّت الآن</button>
+        <button id="dismissInstall" class="install-later" aria-label="لاحقًا">لاحقًا</button>
+      </div>
+    </div>
+  </div>
+
   <div class="news-ticker" id="newsTicker">
     <span class="news-label">تنبيه رسمي</span>
     <div class="news-content" id="newsContent"></div>
@@ -81,10 +94,6 @@
           <a href="#register" class="hover:text-accent">التسجيل</a>
         </nav>
         <div class="flex items-center gap-3">
-          <button id="installBtn" class="hidden lg:inline-flex items-center gap-2 border border-accent/60 text-accent px-3 py-2 rounded-full text-xs hover:bg-accent hover:text-primary transition" aria-label="تثبيت الموقع">
-            <i class="fa-solid fa-download"></i>
-            تثبيت الموقع
-          </button>
           <a href="#register" class="inline-flex items-center gap-2 bg-accent text-primary px-4 py-2 rounded-full text-sm font-semibold shadow-soft" aria-label="سجّل الآن">
             سجّل الآن
           </a>
@@ -360,7 +369,7 @@
         <h2>آراء ونتائج طلابنا 🤍</h2>
         <p>هذه مقتطفات من تجارب فعلية (تم إخفاء البيانات الخاصة حفاظًا على الخصوصية).</p>
       </div>
-      <div id="testimonialsGrid" class="grid lg:grid-cols-4 gap-6"></div>
+      <div id="testimonialsGrid" class="grid lg:grid-cols-2 gap-6"></div>
       <div class="mt-8">
         <h3 class="font-bold mb-3">معرض آراء الطلاب (بدون صور شخصية)</h3>
         <div id="galleryGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
@@ -426,6 +435,11 @@
       <div class="assistant-header">هلا 👋 أنا مساعد التسجيل السريع</div>
       <div class="assistant-body" id="assistantBody"></div>
     </div>
+  </div>
+
+  <div class="mobile-cta">
+    <a href="#quiz" class="cta-quiz">اختبر مستواك</a>
+    <a href="#register" class="cta-register">سجّل الآن</a>
   </div>
 
   <script src="assets/js/data.js"></script>

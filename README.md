@@ -6,3 +6,4 @@
 - السعر الحالي والسعر الرسمي: داخل `index.html` في قسم `#pricing` و `#hero`.
 - عدد المقاعد: داخل `assets/js/data.js` عبر المتغيرين `maxSeats` و`reservedSeats`.
 - رسائل الشريط العلوي والتنبيهات: داخل `assets/js/data.js` في `tickerMessages` و`notifications`.
+- نصوص الآراء والتقييمات: داخل `assets/js/data.js` في مصفوفة `testimonials`.
