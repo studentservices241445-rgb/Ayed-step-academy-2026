@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEP | دورة عايد المكثفة 2026 — التسجيل الرسمي</title>
+  <meta name="description" content="الموقع الرسمي للتسجيل — دورة STEP المكثفة 2026. خطة مذاكرة ذكية، دفع وتحويل رسمي، نموذج تأكيد، وتنبيهات رسمية.">
+  <meta name="theme-color" content="#0b0f19">
+  <meta property="og:title" content="الموقع الرسمي للتسجيل — دورة STEP المكثفة 2026">
+  <meta property="og:description" content="دورة STEP المكثفة 2026 (شرح + تدريب) بخطة واضحة حتى نموذج 50 مع تنبيهات رسمية.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/pwa-512.svg">
+  <meta property="og:url" content="./">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/img/pwa-192.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0b0f19',
+            card: '#111827',
+            gold: '#F6C445',
+            text: '#E5E7EB',
+            muted: '#9CA3AF'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-ink text-text font-[Cairo]">
+  <div class="news-ticker" id="newsTicker">
+    <span class="news-label">تنبيه رسمي</span>
+    <div class="news-content" id="newsContent"></div>
+  </div>
+
+  <header class="fixed top-0 right-0 left-0 z-40 bg-ink/90 backdrop-blur border-b border-white/5">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center">
+            <i class="fa-solid fa-shield-halved text-gold"></i>
+          </div>
+          <div>
+            <p class="text-sm text-muted">STEP | دورة عايد المكثفة 2026</p>
+            <p class="text-xs text-gold">الموقع الرسمي</p>
+          </div>
+        </div>
+        <nav class="hidden lg:flex items-center gap-5 text-sm">
+          <a href="#hero" class="hover:text-gold">الرئيسية</a>
+          <a href="#why" class="hover:text-gold">لماذا الدورة؟</a>
+          <a href="#content" class="hover:text-gold">محتوى الدورة</a>
+          <a href="#quiz" class="hover:text-gold">الأسئلة السريعة</a>
+          <a href="#pricing" class="hover:text-gold">العرض</a>
+          <a href="#payment" class="hover:text-gold">الدفع</a>
+          <a href="#register" class="hover:text-gold">التسجيل</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="installBtn" class="hidden lg:inline-flex items-center gap-2 border border-gold/60 text-gold px-3 py-2 rounded-full text-xs hover:bg-gold hover:text-ink transition">
+            <i class="fa-solid fa-download"></i>
+            تثبيت الموقع
+          </button>
+          <a href="#payment" class="inline-flex items-center gap-2 bg-gold text-ink px-4 py-2 rounded-full text-sm font-semibold shadow-soft">
+            سجّل الآن
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28 watermark-bg">
+    <section id="hero" class="container mx-auto px-4 py-10 lg:py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+          <p class="inline-flex items-center gap-2 text-xs text-gold border border-gold/40 px-3 py-1 rounded-full">
+            <i class="fa-solid fa-circle-check"></i>
+            الموقع الرسمي للتسجيل
+          </p>
+          <h1 class="text-3xl lg:text-4xl font-extrabold leading-relaxed">الموقع الرسمي للتسجيل — دورة STEP المكثفة 2026</h1>
+          <p class="text-muted leading-relaxed">إذا ودّك ترفع درجتك بسرعة بدون تشتت… هذه دورة مركّزة (شرح + تدريب) تمشيك بخطة واضحة على أحدث نماذج STEP حتى نموذج 50، ومع كل تحديثاتنا عبر قروب التنبيهات.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#quiz" class="bg-gold text-ink px-4 py-2 rounded-full font-semibold">ابدأ تحديد خطتك</a>
+            <a href="#payment" class="border border-gold/60 text-gold px-4 py-2 rounded-full">سجّل الآن</a>
+            <a href="#content" class="border border-white/20 px-4 py-2 rounded-full">وش داخل الدورة؟</a>
+          </div>
+          <div class="grid gap-2">
+            <div class="badge">✅ حساب الاشتراك الرسمي: @Ayed_Academy_2026</div>
+            <div class="badge">✅ قروب التنبيهات: تحديثات + عروض + خطط</div>
+            <div class="badge">✅ بوت مجاني: تجميعات وكويزات للمراجعة</div>
+          </div>
+          <div class="flex flex-wrap gap-3 items-center">
+            <div class="countdown-card">
+              <p class="text-xs text-muted">ينتهي العرض خلال</p>
+              <div id="countdown" class="text-lg font-bold text-gold">--:--:--</div>
+            </div>
+            <div class="seats-card">
+              <p class="text-xs text-muted">المقاعد المتبقية</p>
+              <div class="text-xl font-bold" id="seatsRemaining">--</div>
+              <div class="progress">
+                <div class="progress-bar" id="seatsProgress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="card p-6 space-y-4">
+            <h2 class="text-xl font-bold">لماذا الدورة المكثفة؟</h2>
+            <p class="text-muted leading-relaxed">نعرف مشكلة طالب STEP: مصادر كثيرة، وقت محدود، وتشتت. الدورة المكثفة مصممة عشان تعطيك الطريق المختصر: تفهم الاستراتيجيات، تتدرب على النماذج، وتراجع صح — وبأسلوب يلامس احتياجك حسب وقتك ومستواك.</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div class="info-card">شرح واضح ومباشر + تطبيق عملي</div>
+              <div class="info-card">تدريب على النماذج بطريقة منظمة</div>
+              <div class="info-card">تكنيكات للحل السريع وتجنب أخطاء الوقت</div>
+              <div class="info-card">خطط مذاكرة جاهزة (7 / 15 / 23 / 30 يوم)</div>
+              <div class="info-card">دعم ومتابعة خلال مدة الاشتراك</div>
+            </div>
+            <p class="text-sm text-gold">مدة الوصول للمحتوى: 90 يوم من تاريخ التفعيل + دعم فني خلال المدة.</p>
+            <p class="text-xs text-muted">روابط قنوات الدورة الخاصة تُرسل لك بعد التأكيد النهائي من الحساب الرسمي.</p>
+          </div>
+          <div class="card p-6">
+            <h3 class="font-bold mb-3">روابط رسمية مسموح عرضها</h3>
+            <ul class="space-y-2 text-sm text-muted">
+              <li><i class="fa-brands fa-telegram text-gold"></i> قروب التنبيهات الرسمي: <a class="text-gold" href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">https://t.me/Academy_Ayed_2026</a></li>
+              <li><i class="fa-brands fa-telegram text-gold"></i> البوت المجاني: <a class="text-gold" href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">https://t.me/ayedacadmeybot</a></li>
+              <li><i class="fa-solid fa-user-check text-gold"></i> حساب الاشتراك الرسمي: @Ayed_Academy_2026</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>لماذا الدورة المكثفة؟</h2>
+        <p>نفس الهدف، مصادر أكثر، وتشتت أكبر. هذه الدورة تجمع لك كل شيء بمسار واضح.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">المشكلة</h3>
+          <p class="text-muted">مصادر كثيرة، وقت محدود، وتشتت في طريقة المذاكرة.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">الحل</h3>
+          <p class="text-muted">مسار واحد واضح: شرح + تدريب + مراجعة موجهة حسب وقتك.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">النتيجة</h3>
+          <p class="text-muted">تنظيم، التزام، وخطة عملية توصلك لنتيجة واضحة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>محتوى الدورة</h2>
+        <p>كل الأقسام الأساسية مرتبة، وروابط القنوات تُرسل بعد التأكيد النهائي.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">تمهيدي</h3>
+          <p class="text-muted">تأسيس مركز يجهزك للنماذج ويعالج نقاط الضعف الأساسية.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">Grammar</h3>
+          <p class="text-muted">شرح وتطبيق منظم مع استثناءات متكررة بالتدريب.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">Reading</h3>
+          <p class="text-muted">استراتيجيات القراءة السريعة وأسئلة الفهم.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">Exceptions</h3>
+          <p class="text-muted">تجميع الاستثناءات المهمة مع تنبيهات داخل التدريب.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">Listening</h3>
+          <p class="text-muted">تدريب تدريجي من الفكرة العامة حتى التفاصيل.</p>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-bold mb-2">Vocab & Bonuses</h3>
+          <p class="text-muted">مفردات عملية وبونصات تساعدك على الثبات.</p>
+        </div>
+        <div class="card p-5 lg:col-span-3">
+          <h3 class="font-bold mb-2">جداول وخطط</h3>
+          <p class="text-muted">خطط 7 / 15 / 23 / 30 يوم مع ترتيب واضح، وروابط القنوات تُرسل لك بعد التأكيد النهائي من الحساب الرسمي.</p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <a href="#quiz" class="inline-flex items-center gap-2 border border-gold/60 text-gold px-4 py-2 rounded-full">التالي: حدد خطتك</a>
+      </div>
+    </section>
+
+    <section id="study" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>كيف تذاكر داخل الدورة؟</h2>
+        <p>خطة عملية مختصرة: شاهد ثم طبّق ثم راجع ثم اختبر نفسك.</p>
+      </div>
+      <div class="grid lg:grid-cols-4 gap-6">
+        <div class="card p-5 text-center">
+          <i class="fa-solid fa-play text-gold text-2xl mb-3"></i>
+          <p>شاهد</p>
+        </div>
+        <div class="card p-5 text-center">
+          <i class="fa-solid fa-pen-nib text-gold text-2xl mb-3"></i>
+          <p>طبّق</p>
+        </div>
+        <div class="card p-5 text-center">
+          <i class="fa-solid fa-rotate text-gold text-2xl mb-3"></i>
+          <p>راجع</p>
+        </div>
+        <div class="card p-5 text-center">
+          <i class="fa-solid fa-circle-check text-gold text-2xl mb-3"></i>
+          <p>اختبر نفسك</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>أسئلة سريعة لتحديد خطتك</h2>
+        <p>جاوب بسرعة، وبعدها اضغط "اعرض خطتي".</p>
+      </div>
+      <div class="card p-6">
+        <form id="planForm" class="space-y-6">
+          <div>
+            <label class="block mb-3 font-semibold">موعد اختبارك المتوقع؟</label>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <label class="radio-card"><input type="radio" name="examTime" value="7" required> خلال 7 أيام</label>
+              <label class="radio-card"><input type="radio" name="examTime" value="15"> خلال 15 يوم</label>
+              <label class="radio-card"><input type="radio" name="examTime" value="23"> خلال 23 يوم</label>
+              <label class="radio-card"><input type="radio" name="examTime" value="30"> خلال 30 يوم أو أكثر</label>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-3 font-semibold">وقت مذاكرتك اليومي؟</label>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <label class="radio-card"><input type="radio" name="dailyTime" value="30-60" required> 30-60 دقيقة</label>
+              <label class="radio-card"><input type="radio" name="dailyTime" value="1-2"> 1-2 ساعة</label>
+              <label class="radio-card"><input type="radio" name="dailyTime" value="2-4"> 2-4 ساعات</label>
+              <label class="radio-card"><input type="radio" name="dailyTime" value="more"> أكثر</label>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-3 font-semibold">مستواك الحالي؟</label>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <label class="radio-card"><input type="radio" name="level" value="ضعيف" required> ضعيف</label>
+              <label class="radio-card"><input type="radio" name="level" value="متوسط"> متوسط</label>
+              <label class="radio-card"><input type="radio" name="level" value="جيد"> جيد</label>
+              <label class="radio-card"><input type="radio" name="level" value="ممتاز"> ممتاز</label>
+            </div>
+          </div>
+          <button type="submit" class="bg-gold text-ink px-6 py-3 rounded-full font-semibold w-full sm:w-auto">اعرض خطتي</button>
+        </form>
+      </div>
+      <div id="planResult" class="mt-6 hidden"></div>
+      <div class="flex justify-between mt-6">
+        <a href="#content" class="text-muted hover:text-gold">السابق: محتوى الدورة</a>
+        <a href="#pricing" class="text-muted hover:text-gold">التالي: الأسعار</a>
+      </div>
+    </section>
+
+    <section id="pricing" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>الأسعار والعرض</h2>
+        <p>العرض الحالي واضح، والعدّاد يعمل حتى نهاية 29/01/2026.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6 items-start">
+        <div class="card p-6 lg:col-span-2">
+          <p class="text-gold font-bold text-lg">العرض الحالي: 299 ريال ✅</p>
+          <p class="text-muted">السعر الرسمي بعد نهاية العرض: 449 ريال</p>
+          <p class="text-muted mt-4">ينتهي العرض بتاريخ: 29/01/2026 — بعده نكتفي بعدد المشتركين، ثم يفتح التسجيل بالسعر الرسمي.</p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <div class="countdown-card">
+              <p class="text-xs text-muted">الوقت المتبقي</p>
+              <div id="countdownPricing" class="text-lg font-bold text-gold">--:--:--</div>
+            </div>
+            <div class="seats-card">
+              <p class="text-xs text-muted">المقاعد المتبقية</p>
+              <div class="text-xl font-bold" id="seatsRemainingPricing">--</div>
+              <div class="progress">
+                <div class="progress-bar" id="seatsProgressPricing"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-6 space-y-4">
+          <h3 class="font-bold">ملاحظات مهمة</h3>
+          <p class="text-sm text-muted">⚠️ تنبيه: أي تحويل خارج بيانات الحساب أدناه غير معتمد.</p>
+          <p class="text-sm text-muted">التحويل السريع يسرّع التفعيل.</p>
+          <a href="#payment" class="bg-gold text-ink px-4 py-2 rounded-full font-semibold w-full inline-flex justify-center">انتقل للدفع</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>الدفع (تحويل بنكي)</h2>
+        <p>انسخ البيانات الرسمية بعناية، ثم أرفق الإيصال.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="card p-6 space-y-4">
+          <p class="font-semibold">طريقة الاشتراك واضحة وسهلة:</p>
+          <ol class="space-y-2 text-sm text-muted list-decimal list-inside">
+            <li>حوّل الرسوم على الحساب الرسمي الموضح.</li>
+            <li>جهّز الإيصال (صورة أو PDF).</li>
+            <li>عبّئ نموذج التسجيل وارفق الإيصال (إجباري).</li>
+            <li>اضغط (فتح محادثة التأكيد) وأرسل الإيصال مرة ثانية بالخاص للتأكيد النهائي.</li>
+            <li>خلال أقرب وقت يتم التفعيل وتوصلك روابط الدخول + ملف البداية.</li>
+          </ol>
+          <p class="text-xs text-gold">⚠️ تنبيه: أي تحويل خارج بيانات الحساب أدناه غير معتمد.</p>
+        </div>
+        <div class="card p-6 space-y-4">
+          <h3 class="font-bold">بيانات التحويل البنكي الرسمية</h3>
+          <div class="copy-line">
+            <span>البنك: بنك الإنماء</span>
+            <button data-copy="بنك الإنماء" class="copy-btn">نسخ</button>
+          </div>
+          <div class="copy-line">
+            <span>رقم الحساب: 68206067557000</span>
+            <button data-copy="68206067557000" class="copy-btn">نسخ</button>
+          </div>
+          <div class="copy-line">
+            <span>الآيبان: SA4905000068206067557000</span>
+            <button data-copy="SA4905000068206067557000" class="copy-btn">نسخ</button>
+          </div>
+          <div class="copy-line">
+            <span>اسم المستفيد: مؤسسة كريتيفا جلوبال لتقنية المعلومات</span>
+            <button data-copy="مؤسسة كريتيفا جلوبال لتقنية المعلومات" class="copy-btn">نسخ</button>
+          </div>
+          <div class="copy-line">
+            <span>غرض التحويل: مشتريات دورة STEP المكثفة – منصة عايد الرسمية</span>
+            <button data-copy="مشتريات دورة STEP المكثفة – منصة عايد الرسمية" class="copy-btn">نسخ</button>
+          </div>
+          <div class="copy-line">
+            <span>غرض التحويل (بديل): مشتريات دورة STEP المكثفة</span>
+            <button data-copy="مشتريات دورة STEP المكثفة" class="copy-btn">نسخ</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <a href="#register" class="inline-flex items-center gap-2 border border-gold/60 text-gold px-4 py-2 rounded-full">التالي: نموذج التسجيل</a>
+      </div>
+    </section>
+
+    <section id="register" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>نموذج التسجيل وتأكيد الدفع</h2>
+        <p>الحقول المطلوبة موضحة، والرفع إلزامي.</p>
+      </div>
+      <div class="card p-6">
+        <form id="registrationForm" class="grid lg:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2">الاسم الكامل (إجباري)</label>
+            <input type="text" name="fullName" required class="form-input">
+          </div>
+          <div>
+            <label class="block mb-2">موعد الاختبار (اختياري: أو لسا ما حجزت)</label>
+            <input type="text" name="examDate" class="form-input" placeholder="لسا ما حجزت">
+          </div>
+          <div>
+            <label class="block mb-2">هل سبق اختبرت؟</label>
+            <select name="prevExam" class="form-input" required>
+              <option value="لا">لا</option>
+              <option value="نعم">نعم</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">درجتك السابقة (اختياري)</label>
+            <input type="text" name="prevScore" class="form-input">
+          </div>
+          <div>
+            <label class="block mb-2">الدرجة المستهدفة</label>
+            <select name="targetScore" class="form-input" required>
+              <option value="70">70</option>
+              <option value="80">80</option>
+              <option value="85">85</option>
+              <option value="90">90</option>
+              <option value="95">95</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">مستواك الحالي</label>
+            <select name="level" class="form-input" required>
+              <option value="ضعيف">ضعيف</option>
+              <option value="متوسط">متوسط</option>
+              <option value="جيد">جيد</option>
+              <option value="ممتاز">ممتاز</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">القسم الأصعب عليك</label>
+            <select name="hardestSection" class="form-input" required>
+              <option value="Grammar">Grammar</option>
+              <option value="Reading">Reading</option>
+              <option value="Listening">Listening</option>
+              <option value="Vocab">Vocab</option>
+              <option value="إدارة الوقت">إدارة الوقت</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">وقت المذاكرة اليومي</label>
+            <select name="dailyTime" class="form-input" required>
+              <option value="30-60 دقيقة">30-60 دقيقة</option>
+              <option value="1-2 ساعة">1-2 ساعة</option>
+              <option value="2-4 ساعات">2-4 ساعات</option>
+              <option value="أكثر">أكثر</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">طريقة مذاكرتك المفضلة</label>
+            <select name="studyMethod" class="form-input" required>
+              <option value="فيديو ثم تطبيق">فيديو ثم تطبيق</option>
+              <option value="ملفات ثم حل">ملفات ثم حل</option>
+              <option value="مزيج">مزيج</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">منطقة الاختبار (اختياري)</label>
+            <select name="region" class="form-input">
+              <option value="">اختر المنطقة</option>
+              <option value="الرياض">الرياض</option>
+              <option value="جدة">جدة</option>
+              <option value="الدمام">الدمام</option>
+              <option value="القصيم">القصيم</option>
+              <option value="المدينة">المدينة</option>
+              <option value="مكة">مكة</option>
+              <option value="أبها">أبها</option>
+              <option value="تبوك">تبوك</option>
+              <option value="حائل">حائل</option>
+              <option value="الطائف">الطائف</option>
+              <option value="أخرى">أخرى</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">وسيلة التواصل المفضلة</label>
+            <select name="contactMethod" class="form-input" required>
+              <option value="Telegram">Telegram</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Email">Email</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2">قيمة التواصل (اختياري)</label>
+            <input type="text" name="contactValue" class="form-input" placeholder="اختياري لتسهيل الرجوع لك إذا احتجنا">
+          </div>
+          <div>
+            <label class="block mb-2">إرفاق الإيصال (إجباري)</label>
+            <input type="file" name="receipt" class="form-input" accept="image/*,.pdf" required>
+          </div>
+          <div class="lg:col-span-2 space-y-3">
+            <label class="flex items-start gap-2 text-sm">
+              <input type="checkbox" name="pledge1" required class="mt-1"> أتعهد بعدم مشاركة/تسريب محتوى الدورة، وأعلم أن للإدارة حق إلغاء الوصول عند المخالفة.
+            </label>
+            <label class="flex items-start gap-2 text-sm">
+              <input type="checkbox" name="pledge2" required class="mt-1"> أقرّ أني حوّلت على بيانات الحساب الرسمية المذكورة أعلاه.
+            </label>
+            <label class="flex items-start gap-2 text-sm">
+              <input type="checkbox" name="pledge3" required class="mt-1"> أفهم أني سأعيد إرسال الإيصال في الخاص لتأكيد الاشتراك النهائي.
+            </label>
+          </div>
+          <div class="lg:col-span-2">
+            <button type="submit" class="bg-gold text-ink px-6 py-3 rounded-full font-semibold w-full">إرسال النموذج</button>
+          </div>
+        </form>
+      </div>
+      <div id="successScreen" class="hidden mt-8 card p-6 space-y-4">
+        <h3 class="text-xl font-bold text-gold">تم تجهيز رسالة التأكيد</h3>
+        <p class="text-sm text-muted">⚠️ ملاحظة مهمة: الموقع لا يرسل الإيصال تلقائياً (بدون Back-end)، لذلك لازم ترفقه مرة ثانية في الخاص.</p>
+        <div id="successSummary" class="text-sm text-muted"></div>
+        <div class="card p-4 bg-ink border border-white/10 text-sm whitespace-pre-line" id="telegramMessage"></div>
+        <a id="telegramLink" href="#" target="_blank" rel="noopener" class="bg-gold text-ink px-4 py-2 rounded-full font-semibold inline-flex items-center gap-2">
+          <i class="fa-brands fa-telegram"></i>
+          افتح محادثة التأكيد في تليجرام
+        </a>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>آراء وتجارب الطلاب</h2>
+        <p>تجربة موثقة من طلاب الدورة (بموافقتهم).</p>
+      </div>
+      <div id="testimonialsGrid" class="grid lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <section id="faq" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>الأسئلة الشائعة</h2>
+        <p>أجوبة واضحة على أكثر الاستفسارات المتكررة.</p>
+      </div>
+      <div id="faqList" class="space-y-3"></div>
+    </section>
+
+    <section id="share" class="container mx-auto px-4 py-12">
+      <div class="section-title">
+        <h2>مشاركة الإعلان</h2>
+        <p>شارك الإعلان بنصوص جاهزة عبر زر المشاركة.</p>
+      </div>
+      <div class="card p-6 space-y-4">
+        <button id="shareBtn" class="bg-gold text-ink px-4 py-2 rounded-full font-semibold inline-flex items-center gap-2">
+          <i class="fa-solid fa-share-nodes"></i>
+          مشاركة الإعلان
+        </button>
+        <div id="shareTexts" class="grid gap-3 text-sm text-muted"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-card/60 border-t border-white/10 py-10">
+    <div class="container mx-auto px-4 space-y-6">
+      <div class="flex flex-wrap gap-4">
+        <button data-modal="privacy" class="text-gold">سياسة الخصوصية</button>
+        <button data-modal="refund" class="text-gold">سياسة الاسترجاع</button>
+        <button data-modal="terms" class="text-gold">شروط الاستخدام + عدم مشاركة المحتوى</button>
+      </div>
+      <p class="text-xs text-muted">الاشتراك الرسمي فقط عبر @Ayed_Academy_2026</p>
+    </div>
+  </footer>
+
+  <div id="policyModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <button id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div id="stickyWarning" class="sticky-warning">الاشتراك الرسمي فقط عبر @Ayed_Academy_2026</div>
+
+  <div class="assistant">
+    <button id="assistantToggle" class="assistant-toggle"><i class="fa-solid fa-headset"></i></button>
+    <div id="assistantPanel" class="assistant-panel hidden">
+      <div class="assistant-header">كيف نساعدك؟</div>
+      <div class="assistant-body" id="assistantBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
