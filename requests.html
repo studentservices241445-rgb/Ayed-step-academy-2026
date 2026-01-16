@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>طلبات/شكاوى | أكاديمية عايد</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container inner">
+      <div class="brand">
+        <b>طلبات/شكاوى</b>
+        <small>نموذج سريع يولد رسالة مرتبة للتواصل</small>
+      </div>
+      <div class="navlinks">
+        <a href="./index.html">الرئيسية</a>
+        <a href="./register.html">التسجيل</a>
+        <a class="active" href="./requests.html">طلبات/شكاوى</a>
+        <a href="./policies.html">السياسات</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <div class="card"><div class="pad">
+      <h2 style="margin-top:0">قدّم طلبك بسرعة ✅</h2>
+      <form id="reqForm">
+        <div class="grid2">
+          <div class="field">
+            <label>نوع الطلب <span class="req">*</span></label>
+            <select id="type" required>
+              <option value="تأخر تفعيل">تأخر تفعيل</option>
+              <option value="طلب استرجاع">طلب استرجاع</option>
+              <option value="شكوى عامة">شكوى عامة</option>
+              <option value="مشكلة تقنية بالموقع">مشكلة تقنية بالموقع</option>
+              <option value="اشتباه احتيال/انتحال">اشتباه احتيال/انتحال</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>الاسم <span class="req">*</span></label>
+            <input id="name" required />
+          </div>
+
+          <div class="field">
+            <label>رقم العملية/مرجع التحويل (اختياري)</label>
+            <input id="ref" />
+          </div>
+
+          <div class="field">
+            <label>هل سبق أرسلت الإيصال بالخاص؟</label>
+            <select id="sent">
+              <option>نعم</option>
+              <option>لا</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>وصف مختصر للمشكلة <span class="req">*</span></label>
+          <textarea id="desc" required placeholder="اكتبها باختصار وواضح..."></textarea>
+        </div>
+
+        <div class="btnblock">
+          <button class="btn primary" type="submit">فتح تيليجرام برسالة جاهزة ✅</button>
+        </div>
+      </form>
+
+      <div class="note">
+        تنبيه: ارسل “رسالة وحدة” مرتبة + ارفق أي إثبات (إيصال/لقطة) عشان يجيك رد أسرع.
+      </div>
+    </div></div>
+  </main>
+
+  <script type="module" src="./js/requests.js"></script>
+</body>
+</html>
