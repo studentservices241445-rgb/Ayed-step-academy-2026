@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الدفع والتحويل | دورة STEP المكثفة 2026</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="ticker">
+    <div class="container inner">
+      <div class="badge">الدفع والتحويل 🧾</div>
+      <div id="tickerText">مهم: اكتب غرض التحويل + ارفق الإيصال إلزامي</div>
+      <a class="btn small ghost" href="./register.html">التسجيل</a>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="container inner">
+      <div class="brand">
+        <b>أكاديمية عايد الرسمية</b>
+        <small>بيانات التحويل البنكي الرسمية</small>
+      </div>
+      <div class="navlinks">
+        <a href="./index.html">الرئيسية</a>
+        <a href="./level-test.html">اختبار المستوى</a>
+        <a class="active" href="./payment.html">الدفع</a>
+        <a href="./register.html">التسجيل</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <div class="card"><div class="pad">
+      <h2 style="margin-top:0">بيانات التحويل البنكي الرسمية ✅</h2>
+
+      <div class="grid2">
+        <div class="field">
+          <label>البنك</label>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <input id="bankName" readonly value="بنك الإنماء"/>
+            <button class="btn small" data-copy="#bankName">Copy</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>رقم الحساب</label>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <input id="acc" readonly value="68206067557000"/>
+            <button class="btn small" data-copy="#acc">Copy</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>الآيبان</label>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <input id="iban" readonly value="SA4905000068206067557000"/>
+            <button class="btn small" data-copy="#iban">Copy</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>اسم المستفيد</label>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <input id="ben" readonly value="مؤسسة كريتيفا جلوبال لتقنية المعلومات"/>
+            <button class="btn small" data-copy="#ben">Copy</button>
+          </div>
+        </div>
+
+        <div class="field" style="grid-column:1/-1">
+          <label>غرض التحويل (ضروري)</label>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <input id="purpose" readonly value="مشتريات دورة STEP المكثفة – منصة عايد الرسمية"/>
+            <button class="btn small" data-copy="#purpose">Copy</button>
+            <button class="btn small ghost" id="altPurpose">بديل مختصر</button>
+          </div>
+          <div class="help">
+            إذا ما لقيت خانة الغرض… اكتبها في “ملاحظات” أو “وصف التحويل”.
+          </div>
+        </div>
+      </div>
+
+      <hr class="sep"/>
+      <div class="note">
+        ✅ بعد التحويل مباشرة: ادخل صفحة <b>التسجيل</b> وارفع الإيصال (PDF أو صورة) — بدون إيصال ما نقدر نفعّل.
+      </div>
+
+      <div class="btnblock" style="margin-top:12px">
+        <a class="btn primary" href="./register.html">جاهز… بروح للتسجيل ورفع الإيصال ✅</a>
+        <a class="btn ghost" href="./level-test.html">أرجع لاختبار المستوى 🎯</a>
+      </div>
+    </div></div>
+  </main>
+
+  <script type="module">
+    import "./js/notifications.js";
+    document.querySelectorAll("[data-copy]").forEach(btn=>{
+      btn.addEventListener("click", async ()=>{
+        const sel = btn.getAttribute("data-copy");
+        const input = document.querySelector(sel);
+        await navigator.clipboard.writeText(input.value);
+        btn.textContent = "Copied ✅";
+        setTimeout(()=>btn.textContent="Copy", 1200);
+      });
+    });
+    document.querySelector("#altPurpose").addEventListener("click", ()=>{
+      const p = document.querySelector("#purpose");
+      p.value = "مشتريات دورة STEP المكثفة";
+    });
+  </script>
+</body>
+</html>

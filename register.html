@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>التسجيل | دورة STEP المكثفة 2026</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="ticker">
+    <div class="container inner">
+      <div class="badge">التسجيل ✅</div>
+      <div id="tickerText">مهم: الاختبار إلزامي + رفع الإيصال إلزامي</div>
+      <a class="btn small ghost" href="./payment.html">الدفع</a>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="container inner">
+      <div class="brand">
+        <b>أكاديمية عايد الرسمية</b>
+        <small>تأكيد الاشتراك وفتح محادثة تيليجرام</small>
+      </div>
+      <div class="navlinks">
+        <a href="./index.html">الرئيسية</a>
+        <a href="./level-test.html">اختبار المستوى</a>
+        <a href="./payment.html">الدفع</a>
+        <a class="active" href="./register.html">التسجيل</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container section">
+    <div class="card"><div class="pad">
+      <h2 style="margin-top:0">نموذج التسجيل وتأكيد الدفع</h2>
+
+      <div id="gateBox" class="note" style="display:none">
+        ⚠️ قبل التسجيل لازم تسوي <b>اختبار تحديد المستوى</b> عشان نطلع لك خطة مناسبة.<br/>
+        <div class="btnblock" style="margin-top:10px">
+          <a class="btn primary" href="./level-test.html">ابدأ اختبار المستوى الآن 🎯</a>
+        </div>
+      </div>
+
+      <form id="regForm">
+        <div class="grid2">
+          <div class="field">
+            <label>الاسم الكامل <span class="req">*</span></label>
+            <input id="fullName" required placeholder="مثال: سارة محمد"/>
+          </div>
+
+          <div class="field">
+            <label>منطقة الاختبار (اختياري)</label>
+            <select id="region">
+              <option value="">— اختياري —</option>
+              <option>الرياض</option><option>جدة</option><option>الدمام</option><option>مكة</option>
+              <option>المدينة</option><option>القصيم</option><option>أبها</option><option>تبوك</option>
+              <option>حائل</option><option>جازان</option><option>نجران</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>موعد الاختبار (إن وجد)</label>
+            <input id="examDate" type="date"/>
+          </div>
+
+          <div class="field">
+            <label>طريقة تواصلك (اختياري)</label>
+            <select id="contactMethod">
+              <option value="">— اختياري —</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+              <option value="email">Email</option>
+            </select>
+            <div class="help">اختياري… يفيدنا إذا احتجنا نتواصل معك بسرعة.</div>
+          </div>
+
+          <div class="field">
+            <label>رقم/معرّف التواصل (اختياري)</label>
+            <input id="contactValue" placeholder="مثال: 05xxxxxxxx أو @username أو email"/>
+          </div>
+
+          <div class="field">
+            <label>هل سبق اختبرت؟</label>
+            <select id="prevExam">
+              <option value="لا" selected>لا</option>
+              <option value="نعم">نعم</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>درجتك السابقة (اختياري)</label>
+            <input id="prevScore" type="number" min="0" max="100" placeholder="مثال: 63"/>
+          </div>
+
+          <div class="field">
+            <label>درجتك المستهدفة</label>
+            <select id="target">
+              <option>70+</option><option selected>80+</option><option>90+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>ملاحظات / احتياج خاص (اختياري)</label>
+          <textarea id="notes" placeholder="مثال: عندي ضعف في Reading + اختبار بعد 10 أيام..."></textarea>
+        </div>
+
+        <div class="field">
+          <label>إرفاق الإيصال (إجباري) <span class="req">*</span></label>
+          <input id="receipt" type="file" accept="image/*,.pdf" required />
+          <div class="help">
+            لازم ترفق الإيصال هنا… وبعدها <b>برضو</b> ترفقه مرة ثانية داخل تيليجرام للتأكيد النهائي (لأن المتصفح ما يرسل الملف تلقائيًا).
+          </div>
+        </div>
+
+        <div class="field">
+          <label><b>التعهدات (إجباري)</b></label>
+          <label><input type="checkbox" id="pledge1" /> أتعهد بعدم مشاركة محتوى الدورة أو تسريبه بأي شكل.</label>
+          <label><input type="checkbox" id="pledge2" /> أؤكد أن التحويل تم على البيانات الرسمية المذكورة بالموقع.</label>
+          <label><input type="checkbox" id="pledge3" /> أفهم أنه يجب إرسال الإيصال مرة أخرى في تيليجرام للتأكيد النهائي.</label>
+        </div>
+
+        <div class="btnblock">
+          <button class="btn primary" type="submit">تأكيد التسجيل وفتح تيليجرام ✅</button>
+          <a class="btn ghost" href="./payment.html">أرجع لبيانات التحويل</a>
+        </div>
+
+        <div class="note">
+          📌 تنبيه: بعد إرسال رسالة واحدة مرتبة في تيليجرام… <b>انتظر الرد</b> ولا ترسل عدة رسائل عشان ما يتأخر عليك التفعيل.
+        </div>
+      </form>
+    </div></div>
+  </main>
+
+  <script type="module" src="./js/register.js"></script>
+  <script type="module" src="./js/notifications.js"></script>
+</body>
+</html>
