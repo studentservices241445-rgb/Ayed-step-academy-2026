@@ -1,177 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>الموقع الرسمي | دورة STEP المكثفة 2026</title>
-  <meta name="theme-color" content="#070707" />
-  <link rel="manifest" href="./assets/manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-  <div class="ticker">
-    <div class="container inner">
-      <div class="badge">الموقع الرسمي ✅</div>
-      <div id="tickerText">...</div>
-      <button id="installBtn" class="btn small" style="display:none">تثبيت التطبيق</button>
-    </div>
-  </div>
-
-  <nav class="nav">
-    <div class="container inner">
-      <div class="brand">
-        <b>أكاديمية عايد الرسمية</b>
-        <small>STEP | دورة عايد المكثفة 2026</small>
-      </div>
-      <div class="navlinks">
-        <a href="./index.html">الرئيسية</a>
-        <a href="./content.html">محتوى الدورة</a>
-        <a href="./level-test.html">اختبار المستوى</a>
-        <a href="./payment.html">الدفع والتحويل</a>
-        <a href="./register.html">التسجيل</a>
-        <a href="./requests.html">طلبات/شكاوى</a>
-        <a href="./policies.html">السياسات</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="toasts"></div>
-
-  <header class="hero container">
-    <div class="card">
-      <div class="pad hgrid">
-        <div>
-          <h1 style="margin:0;color:var(--gold2);font-size:22px">
-            دورة STEP المكثفة 2026 — بدون تشتت ✨
-          </h1>
-          <p style="margin-top:10px;color:#e8e8e8">
-            إذا صرت تفتح 10 مصادر وتسكر 9… هذا مكانك 😅  
-            الموقع هذا يمشيك <b>خطوة بخطوة</b>: تختبر مستواك → نطلع لك خطة → ثم تسجل وتفعّل اشتراكك.
-          </p>
-
-          <div class="btnblock" style="margin-top:12px">
-            <a class="btn primary" href="./level-test.html">ابدأ اختبار تحديد المستوى 🎯</a>
-            <a class="btn ghost" href="./content.html">شف محتوى الدورة بالتفصيل 📚</a>
-            <a class="btn ghost" href="./payment.html">طريقة الدفع والتحويل 🧾</a>
-          </div>
-
-          <div style="margin-top:12px" class="note">
-            <b id="priceTag"></b><br/>
-            السعر الآن: <b id="priceNow"></b> — بعد 29/01/2026 يصير <b id="priceAfter"></b>
-            <div id="countdown" style="margin-top:10px"></div>
-          </div>
-        </div>
-
-        <div>
-          <div class="kpis">
-            <div class="kpi">
-              <b id="seatsLeft">—</b>
-              <span>المقاعد المتبقية (قابل للتحديث يدويًا)</span>
-            </div>
-            <div class="kpi">
-              <b>90 يوم</b>
-              <span>وصول للمحتوى بعد التفعيل</span>
-            </div>
-            <div class="kpi">
-              <b>آخر تحديثات 2026</b>
-              <span>خطة مبنية على أحدث واقع قياس</span>
-            </div>
-          </div>
-
-          <div class="card" style="margin-top:12px">
-            <div class="pad">
-              <h2 style="margin:0 0 8px;color:var(--gold2);font-size:16px">روابط مهمة</h2>
-              <p style="margin:0;color:#e6e6e6">
-                🔹 قروب التنبيهات: <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">اضغط هنا</a><br/>
-                🔹 بوت مجاني (تجميعات/كويزات): <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">اضغط هنا</a><br/>
-                🔹 للاستفسار والاشتراك: <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">@Ayed_Academy_2026</a>
-              </p>
-              <hr class="sep"/>
-              <div class="note">
-                🇸🇦 رؤية 2030: طموحنا نرفع جاهزية طلابنا لمستقبل مهني قوي… الله يحفظ قيادتنا ويديم أمن بلادنا 💛
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="section">
-      <h2>كيف يمشي عليك الموقع؟</h2>
-      <div class="grid2">
-        <div class="card"><div class="pad">
-          <b style="color:var(--gold2)">1) اختبار مستوى سريع</b>
-          <p>تجاوب أسئلة قصيرة + اختبار تشخيصي صعب… ونطلع نقاط ضعفك.</p>
-        </div></div>
-        <div class="card"><div class="pad">
-          <b style="color:var(--gold2)">2) خطة مذاكرة “على قد وقتك”</b>
-          <p>سواء اختبارك بعد أسبوع أو شهر… الخطة تتغير حسب وقتك.</p>
-        </div></div>
-        <div class="card"><div class="pad">
-          <b style="color:var(--gold2)">3) الدفع + رفع الإيصال</b>
-          <p>بيانات التحويل واضحة + أزرار Copy + رفع إيصال إلزامي.</p>
-        </div></div>
-        <div class="card"><div class="pad">
-          <b style="color:var(--gold2)">4) فتح تيليجرام برسالة جاهزة</b>
-          <p>بعد التسجيل يفتح لك تيليجرام برسالة مرتبة… وترفق الإيصال مرة ثانية للتأكيد النهائي.</p>
-        </div></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>ليش المكثفة؟</h2>
-      <div class="card"><div class="pad">
-        <ul class="list">
-          <li>تقليل التشتت: تمشي على مسار واحد واضح.</li>
-          <li>تركيز على “الأنماط المتكررة” + مهارات الحل السريع.</li>
-          <li>اختبار تشخيصي يطلع لك أولوياتك (Grammar/Reading/Listening/Vocab).</li>
-          <li>خطة يومية… وش تذاكر “بالضبط” بدون فلسفة كثيرة.</li>
-        </ul>
-      </div></div>
-    </section>
-
-    <section class="section">
-      <h2>آراء طلاب (نماذج تدريبية)</h2>
-      <div class="grid2">
-        <div class="card"><div class="pad">“كنت مشتت بين مصادر كثير… أول ما مشيت على الخطة اليومية صار كل شيء واضح.” — (طالب/ة)</div></div>
-        <div class="card"><div class="pad">“اختبار المستوى أعطاني صدمة لطيفة 😅 اكتشفت ضعفي Reading… وبعد أسبوعين تحسن وقتي بالحل.” — (طالب/ة)</div></div>
-        <div class="card"><div class="pad">“الميزة إنك ما تضيع وقتك: وش تذاكر اليوم؟ وش تراجع؟ كل شيء مرتب.” — (طالب/ة)</div></div>
-        <div class="card"><div class="pad">“Vocabulary كنت أستهين فيه… وبعد ما مشيت على 10 كلمات يوميًا لاحظت فرق بالاختيارات.” — (طالب/ة)</div></div>
-      </div>
-    </section>
-  </main>
-
-  <div class="fab">
-    <div class="hint">مساعد التسجيل السريع</div>
-    <div id="assistantBtn" class="bubble">سؤال؟ 🤝</div>
-  </div>
-
-  <div id="assistantModal" class="modalOverlay">
-    <div class="modal">
-      <div class="head">
-        <b>مساعد التسجيل</b>
-        <button class="x" id="assistantClose">إغلاق</button>
-      </div>
-      <div class="body" id="assistantBody"></div>
-    </div>
-  </div>
-
-  <footer class="container">
-    <div class="footerlinks">
-      <a href="./policies.html">السياسات</a>
-      <a href="./requests.html">طلبات/شكاوى</a>
-      <a href="./payment.html">الدفع والتحويل</a>
-      <a href="./level-test.html">اختبار المستوى</a>
-    </div>
-    <p style="margin-top:10px">
-      © 2026 أكاديمية عايد الرسمية — جميع الحقوق محفوظة.
-    </p>
-  </footer>
-
-  <script type="module" src="./js/main.js"></script>
-  <script type="module" src="./js/assistant.js"></script>
-</body>
-</html>
